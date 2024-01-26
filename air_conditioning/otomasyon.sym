@@ -1,0 +1,146 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+008     lcd
+008     lcdlat
+008     PSP_DATA
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020     rakam
+021     sicaklik
+022     sicaklik2
+023     x
+024     k
+025     z
+026     @TRIS_C
+027     system_app.count
+027     lcd_init.i
+028     system_app.count2
+028     lcd_init.@SCRATCH1
+029     system_app.y
+02A     @MUL88.P1
+02A     temp1.@SCRATCH1
+02A     temp2.@SCRATCH1
+02A     keypad.@SCRATCH1
+02A     system_app.@SCRATCH1
+02A     @PSTRINGC7_640.@SCRATCH1
+02B     @MUL88.P1
+02B     @PRINTF_D_640.P2
+02B     temp1.@SCRATCH2
+02B     temp2.@SCRATCH2
+02B     @PSTRINGC7_640.@SCRATCH2
+02C     @PRINTF_D_640.P1
+02C     @PSTRINGC7_640.@SCRATCH3
+02D     @PSTRINGC7_640.@SCRATCH4
+02D     @PRINTF_D_640.@SCRATCH1
+02E     @PRINTF_D_640.@SCRATCH2
+02F     @PRINTF_D_640.@SCRATCH3
+030     @PRINTF_D_640.@SCRATCH4
+031     @DIV88.P1
+031     lcd_putc.c
+032     lcd_gotoxy.x
+032     @DIV88.P1
+032     @delay_ms1.P2
+033     lcd_gotoxy.y
+033     @DIV88.@SCRATCH1
+034     lcd_gotoxy.address
+035     lcd_gotoxy.@SCRATCH1
+036     lcd_send_byte.address
+037     lcd_send_byte.n
+038     lcd_read_byte.low
+038     lcd_send_byte.@SCRATCH1
+039     lcd_read_byte.high
+039     lcd_send_nibble.n
+03A     lcd_read_byte.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+088     lcdtris
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  LCD_INIT_STRING.call
+000008  LCD_INIT_STRING.data
+00000C  @const666.call
+000014  @const668.call
+00001C  @const673.call
+000023  @const674.call
+00002A  @const675.call
+00002E  @const676.call
+000032  @const677.call
+000036  @const678.call
+00003A  @const686.call
+000042  @const690.call
+000046  @const693.call
+00004A  @const695.call
+000052  @const696.call
+000056  @const698.call
+00005A  @const701.call
+000060  @const703.call
+000066  @const705.call
+000069  @const707.call
+00006C  @const709.call
+00006F  @const711.call
+000072  @const713.call
+000075  @const715.call
+000078  @const717.call
+00007B  @const719.call
+00007E  @delay_ms1
+000093  lcd_send_nibble
+00009F  lcd_read_nibble
+0000A5  lcd_send_byte
+0000AB  lcd_read_byte
+0000E5  lcd_init
+000118  temp1
+000133  temp2
+00014E  keypad
+00024A  lcd_gotoxy
+00025C  lcd_putc
+000288  @PSTRINGC7_640
+0002D3  @DIV88
+0002E8  @PRINTF_D_640
+00033F  @MUL88
+000364  system_app
+000640  @cinit1
+000640  MAIN
+000647  @cinit2
+
+Project Directory:
+    C:\Users\turkm\Desktop\2.sýnýf_dersleri\pic2\
+
+Project Files:
+    otomasyon.c                                             [26-Oca-24 00:08  CRC=CCDAC906]
+    ..\..\..\..\..\Program Files (x86)\PICC\Devices\16f877.h [21-Haz-13 16:04  CRC=A355A189]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h [03-Oca-08 13:55  CRC=2D1F019F]
+    ..\..\..\..\..\Program Files (x86)\PICC\Drivers\lcd.c   [23-Aðu-12 09:01  CRC=D28E8746]
+
+Source signature=426C7ABA
+
+Units:
+    otomasyon (main)
+
+Compiler Settings:
+    Processor:      PIC16F877
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   otomasyon.xsym
+    Errors:      otomasyon.err
+    Ext Symbols: otomasyon.esym
+    INHX8:       otomasyon.hex
+    Symbols:     otomasyon.sym
+    List:        otomasyon.lst
+    Debug/COFF:  otomasyon.cof
+    Project:     otomasyon.ccspjt
+    Call Tree:   otomasyon.tre
+    Statistics:  otomasyon.STA
